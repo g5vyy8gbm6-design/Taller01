@@ -1,6 +1,6 @@
 /*Solicitar un número e indicar si es positivo, 
 negativo o cero.*/ 
-numero=-0
+numero=12
 //ponemos la condicion
 if (numero > 0)
     console.log("El número es positivo.")

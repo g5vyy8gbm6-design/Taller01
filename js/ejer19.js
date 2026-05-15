@@ -11,9 +11,9 @@ else if (salario <= 3000000){
     tasa=0.10
     console.log("aplica impuesto del 10%")
 }
-else (salario > 3000000){
+else {
     tasa=0.20
- console.log("aplica impuesto del 20%")
+    console.log("aplica impuesto del 20%")
 }
 
 impuesto=salario*tasa
