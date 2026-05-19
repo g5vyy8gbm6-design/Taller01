@@ -1,5 +1,5 @@
 //19.	Calcular impuesto de ingresos
-salario = 6300000
+salario = 2500000
 console.log("salario total=",salario)
 
 if (salario < 1500000){
