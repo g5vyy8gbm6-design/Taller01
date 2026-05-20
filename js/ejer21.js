@@ -9,3 +9,4 @@ if (edad <=59)
    console.log("eres un adulto")
 else
    console.log("eres un adulto mayor")
+
