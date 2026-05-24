@@ -12,4 +12,3 @@ pago_de_horas_extra = ( calculodeh / 8 )  * 1.5;
 salarioTotal = salarioBase + pago_de_horas_extra;            
 //Mostrar el resultado
 console.log("El salario total es: " + salarioTotal);
-
