@@ -15,7 +15,7 @@ function preguntarEntero(text) {
   return NaN;
 }
 
-alert('Sistema de votación: elige un candidato por número. Se mostrarán resultados al final.');
+alert('Sistema de votacion: elige un candidato por numero. Se mostraran resultados al final.');
 let votantes = preguntarEntero('¿Cuántos votantes hay?');
 if (votantes === null) {
   console.log('Operación cancelada por el usuario.');

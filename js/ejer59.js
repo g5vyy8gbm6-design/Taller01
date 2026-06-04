@@ -2,19 +2,19 @@
 const numeroSecreto = Math.floor(Math.random() * 20) + 1;
 let intentosRestantes = 5;
 
-console.log("Juego: adivina el número");
-console.log("Tienes 5 intentos para acertar un número entre 1 y 20.");
+alert("Juego: adivina el numero");
+alert("Tienes 5 intentos para acertar un numero entre 1 y 20.");
 
 function preguntarNumero() {
-    const entrada = prompt(`Intentos restantes: ${intentosRestantes}\nIngresa un número entre 1 y 20:`);
+    const entrada = prompt(`Intentos restantes: ${intentosRestantes}\nIngresa un numero entre 1 y 20:`);
     if (entrada === null) {
-        console.log("Juego cancelado.");
+        alert("Juego cancelado.");
         return;
     }
 
     const apuesta = Number(entrada);
     if (!Number.isInteger(apuesta) || apuesta < 1 || apuesta > 20) {
-        console.log("Ingresa un número entero entre 1 y 20.");
+        alert("Ingresa un numero entero entre 1 y 20.");
         preguntarNumero();
         return;
     }
@@ -22,20 +22,20 @@ function preguntarNumero() {
     intentosRestantes--;
 
     if (apuesta === numeroSecreto) {
-        console.log(`¡Correcto! Adivinaste el número ${numeroSecreto}.`);
+        alert(`¡Correcto! Adivinaste el numero ${numeroSecreto}.`);
         return;
     }
 
     if (apuesta < numeroSecreto) {
-        console.log("Muy bajo.");
+            alert("Muy bajo.");
     } else {
-        console.log("Muy alto.");
+        alert("Muy alto.");
     }
 
     if (intentosRestantes > 0) {
         preguntarNumero();
     } else {
-        console.log(`Se te acabaron los intentos. El número era ${numeroSecreto}.`);
+        alert(`Se te acabaron los intentos. El numero era ${numeroSecreto}.`);
     }
 }
 
